@@ -20,6 +20,12 @@ class PatientListViewController: UIViewController {
         patientListTableView.register(cellNib, forCellReuseIdentifier: "PatientTableViewCell")
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let secondVC: PatientDetailViewController = segue.destination as? PatientDetailViewController,
+           let patient = sender as? Patient {
+            secondVC.patient = patient
+        }
+    }
 }
 
 extension PatientListViewController: UITableViewDataSource, UITableViewDelegate {
@@ -30,15 +36,27 @@ extension PatientListViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PatientTableViewCell") as? PatientTableViewCell else { return UITableViewCell() }
         
-        let index = doctor.patients[indexPath.row]
-        cell.setData(index)
+        let patient = doctor.patients[indexPath.row]
+        cell.setData(patient, self)
         
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UIScreen.main.bounds.height * 0.05
+        return UIScreen.main.bounds.height * 0.0
+    }
+}
+
+extension PatientListViewController: PatientCellDelegate {
+    func patientDetail(cell: UITableViewCell) {
+        guard let indexPath = patientListTableView.indexPath(for: cell) else {
+            return
+        }
+        
+        let patient = doctor.patients[indexPath.row]
+        self.performSegue(withIdentifier: "showDetails", sender: patient)
+
     }
     
 }

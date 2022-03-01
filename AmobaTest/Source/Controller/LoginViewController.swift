@@ -45,11 +45,19 @@ class LoginViewController: UIViewController {
         emailTextField.layer.borderWidth = 1
         emailTextField.layer.borderColor = UIColor.lightGray.cgColor
         
+        if let icon = UIImage(named: "UserIcon") {
+            emailTextField.setLeftIcon(icon)
+        }
+        
         passwordTextField.layer.cornerRadius = passwordTextField.bounds.width * 0.1
         passwordTextField.layer.borderWidth = 1
         passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
+        
+        
+        if let icon = UIImage(named: "PaswordIcon") {
+            passwordTextField.setLeftIcon(icon)
+        }
     }
-    
     
     @IBAction func loginButtom(_ sender: Any) {
         guard let userName = emailTextField.text, !userName.isEmpty,

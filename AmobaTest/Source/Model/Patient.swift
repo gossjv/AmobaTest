@@ -9,6 +9,7 @@ import Foundation
 
 struct Patient: Decodable {
     let id: Int
+    let peopleDocument: String
     let fullname: String
     let phone: String
     let mobile: String
@@ -20,6 +21,7 @@ struct Patient: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case id
+        case peopleDocument = "people_document"
         case fullname = "people_first_name"
         case phone = "people_phone"
         case mobile = "people_mobile"

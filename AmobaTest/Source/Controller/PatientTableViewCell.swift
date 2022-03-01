@@ -8,31 +8,36 @@
 import UIKit
 import Kingfisher
 
-class PatientTableViewCell: UITableViewCell {
+protocol PatientCellDelegate: AnyObject {
+    func patientDetail(cell: UITableViewCell)
+}
 
+class PatientTableViewCell: UITableViewCell {
+    
+    weak var delegate: PatientCellDelegate?
+    
     @IBOutlet weak var namePatientLabel: UILabel!
     @IBOutlet weak var statusPatientLabel: UILabel!
     @IBOutlet weak var imagePatient: UIImageView!
     
-    func setData(_ patient: Patient) {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        roundView(view: imagePatient)
+    }
+    
+    func setData(_ patient: Patient, _ delegate: PatientCellDelegate) {
+        let font = CustomFont.setFontSofiaProRegular(fontSize: 13)
+        
         namePatientLabel.text = patient.fullname
+        namePatientLabel.font = font
         statusPatientLabel.text = "Paciente Actual"
+        statusPatientLabel.font = font 
         imagePatient.kf.setImage(with: patient.image)
-
+        self.delegate = delegate
     }
     
     @IBAction func detailsPatientButton(_ sender: Any) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        if let vc = storyboard.instantiateViewController(identifier: "SerieDetailsViewController") as? SerieDetailsViewController {
-//
-//            
-//            navigationController?.pushViewController(vc, animated: false)
-        
-        
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        if let vc = storyboard.instantiateViewController(identifier: "SerieDetailsViewController") as? SerieDetailsViewController {
-//
-//        self.presentViewController(vc, animated: true, completion: nil)
-//        }
+//        productToDelete?.deletedProduct(seletedProduct!)
+        delegate?.patientDetail(cell: self)
     }
 }
