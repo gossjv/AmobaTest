@@ -1,0 +1,6 @@
+module Pods_AmobaTest {
+  umbrella header "Pods-AmobaTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,23 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB05590E27CEA82A001A50F3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05590D27CEA82A001A50F3 /* Patient.swift */; };
+		EB05591927CEAA2E001A50F3 /* PatientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05591827CEAA2E001A50F3 /* PatientResponse.swift */; };
+		EB6D6A4527CD308D00F932C0 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A4427CD308D00F932C0 /* PatientDetailViewController.swift */; };
+		EB6D6A4827CD723A00F932C0 /* SofiaProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6A4727CD723A00F932C0 /* SofiaProRegular.ttf */; };
+		EB6D6A5E27CD96C900F932C0 /* APIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A5D27CD96C900F932C0 /* APIRequestable.swift */; };
+		EB6D6A6327CD980900F932C0 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A6227CD980900F932C0 /* ErrorResponse.swift */; };
+		EB6D6A6727CD9A0A00F932C0 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A6627CD9A0A00F932C0 /* APIService.swift */; };
+		EB6D6A6A27CD9CE800F932C0 /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A6927CD9CE800F932C0 /* APIViewModel.swift */; };
+		EB6D6A6D27CD9D8800F932C0 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A6C27CD9D8800F932C0 /* KeychainHelper.swift */; };
+		EB6D6A7827CDB14900F932C0 /* UIView+AMOBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A7727CDB14900F932C0 /* UIView+AMOBA.swift */; };
+		EB939B2B27CC5C5A0029274F /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB939B2A27CC5C5A0029274F /* CustomFont.swift */; };
 		EBDCDD7C27CC200D0080191C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD7B27CC200D0080191C /* AppDelegate.swift */; };
-		EBDCDD7E27CC200D0080191C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD7D27CC200D0080191C /* SceneDelegate.swift */; };
-		EBDCDD8027CC200D0080191C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD7F27CC200D0080191C /* ViewController.swift */; };
+		EBDCDD8027CC200D0080191C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD7F27CC200D0080191C /* LoginViewController.swift */; };
 		EBDCDD8327CC200D0080191C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDCDD8127CC200D0080191C /* Main.storyboard */; };
 		EBDCDD8527CC20190080191C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDCDD8427CC20190080191C /* Assets.xcassets */; };
 		EBDCDD8827CC20190080191C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDCDD8627CC20190080191C /* LaunchScreen.storyboard */; };
+		EBDCDD9127CC29E40080191C /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBDCDD9027CC29E40080191C /* BebasNeue-Regular.ttf */; };
+		EBDCDD9D27CC37460080191C /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD9C27CC37460080191C /* PatientListViewController.swift */; };
+		EBDCDDA027CC38AC0080191C /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDD9F27CC38AC0080191C /* Doctor.swift */; };
+		EBDCDDA427CC3ACC0080191C /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCDDA227CC3ACC0080191C /* PatientTableViewCell.swift */; };
+		EBDCDDA527CC3ACC0080191C /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDCDDA327CC3ACC0080191C /* PatientTableViewCell.xib */; };
+		F0779ADF326F946D2AA8BF5C /* libPods-AmobaTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D806A096BCE73F41E0F0C673 /* libPods-AmobaTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		878A29E838A38F01AC08E739 /* Pods-AmobaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmobaTest.release.xcconfig"; path = "Target Support Files/Pods-AmobaTest/Pods-AmobaTest.release.xcconfig"; sourceTree = "<group>"; };
+		D806A096BCE73F41E0F0C673 /* libPods-AmobaTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AmobaTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB05590D27CEA82A001A50F3 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		EB05591827CEAA2E001A50F3 /* PatientResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientResponse.swift; sourceTree = "<group>"; };
+		EB6D6A4427CD308D00F932C0 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
+		EB6D6A4727CD723A00F932C0 /* SofiaProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SofiaProRegular.ttf; sourceTree = "<group>"; };
+		EB6D6A5D27CD96C900F932C0 /* APIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestable.swift; sourceTree = "<group>"; };
+		EB6D6A6227CD980900F932C0 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		EB6D6A6627CD9A0A00F932C0 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EB6D6A6927CD9CE800F932C0 /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		EB6D6A6C27CD9D8800F932C0 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		EB6D6A7727CDB14900F932C0 /* UIView+AMOBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AMOBA.swift"; sourceTree = "<group>"; };
+		EB939B2A27CC5C5A0029274F /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		EBDCDD7827CC200D0080191C /* AmobaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmobaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDCDD7B27CC200D0080191C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBDCDD7D27CC200D0080191C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBDCDD7F27CC200D0080191C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBDCDD7F27CC200D0080191C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBDCDD8227CC200D0080191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBDCDD8427CC20190080191C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDCDD8727CC20190080191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBDCDD8927CC20190080191C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDCDD9027CC29E40080191C /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		EBDCDD9C27CC37460080191C /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListViewController.swift; sourceTree = "<group>"; };
+		EBDCDD9F27CC38AC0080191C /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		EBDCDDA227CC3ACC0080191C /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		EBDCDDA327CC3ACC0080191C /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
+		ED4B65B75E91CEE04045BB4F /* Pods-AmobaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmobaTest.debug.xcconfig"; path = "Target Support Files/Pods-AmobaTest/Pods-AmobaTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +65,128 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0779ADF326F946D2AA8BF5C /* libPods-AmobaTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03BF76B6C2DD9D231A4B35C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED4B65B75E91CEE04045BB4F /* Pods-AmobaTest.debug.xcconfig */,
+				878A29E838A38F01AC08E739 /* Pods-AmobaTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F73273ACE1DB0F679D5E6B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D806A096BCE73F41E0F0C673 /* libPods-AmobaTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB6D6A5127CD957E00F932C0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD8427CC20190080191C /* Assets.xcassets */,
+				EBDCDD8927CC20190080191C /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		EB6D6A5227CD95A000F932C0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD9327CC29F90080191C /* Font */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EB6D6A5427CD95B600F932C0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD8627CC20190080191C /* LaunchScreen.storyboard */,
+				EBDCDD7B27CC200D0080191C /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EB6D6A5827CD962B00F932C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD8127CC200D0080191C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EB6D6A5927CD963200F932C0 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDDA327CC3ACC0080191C /* PatientTableViewCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		EB6D6A5A27CD965A00F932C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A5C27CD96B600F932C0 /* API */,
+				EB6D6A5B27CD966900F932C0 /* Utils */,
+				EBDCDD9A27CC33E50080191C /* Controller */,
+				EBDCDD9927CC33DD0080191C /* View */,
+				EBDCDD9827CC33D70080191C /* Model */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EB6D6A5B27CD966900F932C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A7627CDB12B00F932C0 /* Extensions */,
+				EB939B2A27CC5C5A0029274F /* CustomFont.swift */,
+				EB6D6A6C27CD9D8800F932C0 /* KeychainHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EB6D6A5C27CD96B600F932C0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A6127CD97BC00F932C0 /* Error */,
+				EB6D6A5D27CD96C900F932C0 /* APIRequestable.swift */,
+				EB6D6A6627CD9A0A00F932C0 /* APIService.swift */,
+				EB6D6A6927CD9CE800F932C0 /* APIViewModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EB6D6A6127CD97BC00F932C0 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A6227CD980900F932C0 /* ErrorResponse.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		EB6D6A7627CDB12B00F932C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A7727CDB14900F932C0 /* UIView+AMOBA.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EBDCDD6F27CC200D0080191C = {
 			isa = PBXGroup;
 			children = (
 				EBDCDD7A27CC200D0080191C /* AmobaTest */,
 				EBDCDD7927CC200D0080191C /* Products */,
+				03BF76B6C2DD9D231A4B35C4 /* Pods */,
+				3F73273ACE1DB0F679D5E6B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +201,51 @@
 		EBDCDD7A27CC200D0080191C /* AmobaTest */ = {
 			isa = PBXGroup;
 			children = (
-				EBDCDD7B27CC200D0080191C /* AppDelegate.swift */,
-				EBDCDD7D27CC200D0080191C /* SceneDelegate.swift */,
-				EBDCDD7F27CC200D0080191C /* ViewController.swift */,
-				EBDCDD8127CC200D0080191C /* Main.storyboard */,
-				EBDCDD8427CC20190080191C /* Assets.xcassets */,
-				EBDCDD8627CC20190080191C /* LaunchScreen.storyboard */,
-				EBDCDD8927CC20190080191C /* Info.plist */,
+				EB6D6A5A27CD965A00F932C0 /* Source */,
+				EB6D6A5427CD95B600F932C0 /* Core */,
+				EB6D6A5227CD95A000F932C0 /* Assets */,
+				EB6D6A5127CD957E00F932C0 /* Supporting files */,
 			);
 			path = AmobaTest;
+			sourceTree = "<group>";
+		};
+		EBDCDD9327CC29F90080191C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD9027CC29E40080191C /* BebasNeue-Regular.ttf */,
+				EB6D6A4727CD723A00F932C0 /* SofiaProRegular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		EBDCDD9827CC33D70080191C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB05591827CEAA2E001A50F3 /* PatientResponse.swift */,
+				EBDCDD9F27CC38AC0080191C /* Doctor.swift */,
+				EB05590D27CEA82A001A50F3 /* Patient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBDCDD9927CC33DD0080191C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D6A5927CD963200F932C0 /* XIB */,
+				EB6D6A5827CD962B00F932C0 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBDCDD9A27CC33E50080191C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBDCDD7F27CC200D0080191C /* LoginViewController.swift */,
+				EBDCDD9C27CC37460080191C /* PatientListViewController.swift */,
+				EBDCDDA227CC3ACC0080191C /* PatientTableViewCell.swift */,
+				EB6D6A4427CD308D00F932C0 /* PatientDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDCDD8C27CC20190080191C /* Build configuration list for PBXNativeTarget "AmobaTest" */;
 			buildPhases = (
+				7DD9AD7247C310B12CF0AC12 /* [CP] Check Pods Manifest.lock */,
 				EBDCDD7427CC200D0080191C /* Sources */,
 				EBDCDD7527CC200D0080191C /* Frameworks */,
 				EBDCDD7627CC200D0080191C /* Resources */,
@@ -95,6 +277,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					EBDCDD7727CC200D0080191C = {
 						CreatedOnToolsVersion = 12.4;
@@ -125,21 +308,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDCDD8827CC20190080191C /* LaunchScreen.storyboard in Resources */,
+				EBDCDDA527CC3ACC0080191C /* PatientTableViewCell.xib in Resources */,
+				EB6D6A4827CD723A00F932C0 /* SofiaProRegular.ttf in Resources */,
 				EBDCDD8527CC20190080191C /* Assets.xcassets in Resources */,
+				EBDCDD9127CC29E40080191C /* BebasNeue-Regular.ttf in Resources */,
 				EBDCDD8327CC200D0080191C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7DD9AD7247C310B12CF0AC12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmobaTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBDCDD7427CC200D0080191C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBDCDD8027CC200D0080191C /* ViewController.swift in Sources */,
+				EB939B2B27CC5C5A0029274F /* CustomFont.swift in Sources */,
+				EB6D6A4527CD308D00F932C0 /* PatientDetailViewController.swift in Sources */,
+				EBDCDD8027CC200D0080191C /* LoginViewController.swift in Sources */,
+				EBDCDD9D27CC37460080191C /* PatientListViewController.swift in Sources */,
 				EBDCDD7C27CC200D0080191C /* AppDelegate.swift in Sources */,
-				EBDCDD7E27CC200D0080191C /* SceneDelegate.swift in Sources */,
+				EBDCDDA427CC3ACC0080191C /* PatientTableViewCell.swift in Sources */,
+				EB6D6A6A27CD9CE800F932C0 /* APIViewModel.swift in Sources */,
+				EB6D6A7827CDB14900F932C0 /* UIView+AMOBA.swift in Sources */,
+				EB6D6A6D27CD9D8800F932C0 /* KeychainHelper.swift in Sources */,
+				EB6D6A6327CD980900F932C0 /* ErrorResponse.swift in Sources */,
+				EB6D6A6727CD9A0A00F932C0 /* APIService.swift in Sources */,
+				EB05590E27CEA82A001A50F3 /* Patient.swift in Sources */,
+				EB6D6A5E27CD96C900F932C0 /* APIRequestable.swift in Sources */,
+				EBDCDDA027CC38AC0080191C /* Doctor.swift in Sources */,
+				EB05591927CEAA2E001A50F3 /* PatientResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +506,12 @@
 		};
 		EBDCDD8D27CC20190080191C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED4B65B75E91CEE04045BB4F /* Pods-AmobaTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmobaTest/Info.plist;
+				INFOPLIST_FILE = "AmobaTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +519,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrovalderrama.testingSi123.AmobaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EBDCDD8E27CC20190080191C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878A29E838A38F01AC08E739 /* Pods-AmobaTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AmobaTest/Info.plist;
+				INFOPLIST_FILE = "AmobaTest/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pedrovalderrama.testingSi123.AmobaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
