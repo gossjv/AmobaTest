@@ -52,8 +52,7 @@ extension APIService: TargetType, AccessTokenAuthorizable {
                 "client_id": "2",
                 "client_secret": "rDnLA1OfY8nHovztVBU8rcvOP9K5iH7LngUZNIzB",
                 "username" : userName,
-                "password" : password
-            ]
+                "password" : password]
             
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)
         

@@ -16,11 +16,6 @@ class LoginViewController: UIViewController {
     
     let viewModel = APIViewModel()
     
-    // en el log out
-    //let keychain = KeychainHelper()
-    //keychain.delete(.token)
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let keychainHelper = KeychainHelper()
@@ -36,9 +31,7 @@ class LoginViewController: UIViewController {
     func configureElements() {
         
         titleLabel.font = CustomFont.setFontBebasNeue(fontSize: 36)
-        emailTextField.text = "pruebas@amobasoftware.com"
-        passwordTextField.text = "123456"
-        
+
         loginButton.layer.cornerRadius = loginButton.bounds.width * 0.1
         
         emailTextField.layer.cornerRadius = emailTextField.bounds.width * 0.1
@@ -96,9 +89,7 @@ class LoginViewController: UIViewController {
             switch result {
             case let .success(response):
                 print("tengo todos los patients que son \(response.count)")
-                let patients = response.map { $0.person }
                 let doctor = Doctor(doctorId: doctorId, companyId: companyId, patients: response.map ({ $0.person }))
-                
                 self?.performSegue(withIdentifier: "showPatients", sender: doctor)
             case let .failure(error): print("error en la peticion: \(error)")
             }

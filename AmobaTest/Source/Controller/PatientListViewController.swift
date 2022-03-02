@@ -10,7 +10,6 @@ import UIKit
 class PatientListViewController: UIViewController {
 
     @IBOutlet weak var patientListTableView: UITableView!
-    
     @IBOutlet weak var logoutUIBotton: UIButton!
     
     var doctor: Doctor!
@@ -67,7 +66,6 @@ extension PatientListViewController: PatientCellDelegate {
         guard let indexPath = patientListTableView.indexPath(for: cell) else {
             return
         }
-        
         let patient = doctor.patients[indexPath.row]
         self.performSegue(withIdentifier: "showDetails", sender: patient)
 

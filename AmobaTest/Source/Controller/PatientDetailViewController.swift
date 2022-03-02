@@ -58,7 +58,7 @@ class PatientDetailViewController: UIViewController {
         imagePatient.kf.setImage(with: patient.image)
         namePatientLabel.text = patient.fullname
         namePatientLabel.font = font
-        sexPatientLabel.text = genderLabelString(patient.sex)
+        sexPatientLabel.text = patient.sex == "M" ? "Masculino" : "Femenino"
         sexPatientLabel.font = font
         adressPatientLabel.text = patient.address
         adressPatientLabel.font = font
@@ -81,9 +81,4 @@ class PatientDetailViewController: UIViewController {
         sexLabel.font = font
         
     }
-    
-    func genderLabelString(_ gender: String) -> String {
-        gender == "M" ? "Masculino" : "Femenino"
-    }
- 
 }

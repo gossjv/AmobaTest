@@ -25,8 +25,6 @@ class APIViewModel: APIRequestable {
     func getAllPatients(_ service: Service, _ callback: @escaping (Result<[PatientResponse], Error>) -> Void) {
         request(target: service, model: [PatientResponse].self,  callback: callback)
     }
-    
-//    func logout(
 }
 
 

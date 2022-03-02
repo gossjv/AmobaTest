@@ -10,7 +10,6 @@ import UIKit
 
 struct CustomFont {
     
-    
     static func setFontBebasNeue(fontSize: CGFloat) -> UIFont {
         let size = fontSize * (UIScreen.main.bounds.width / 320)
         let font = UIFont(name: "BebasNeue-Regular", size: size)

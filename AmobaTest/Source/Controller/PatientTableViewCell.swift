@@ -37,7 +37,6 @@ class PatientTableViewCell: UITableViewCell {
     }
     
     @IBAction func detailsPatientButton(_ sender: Any) {
-//        productToDelete?.deletedProduct(seletedProduct!)
         delegate?.patientDetail(cell: self)
     }
 }

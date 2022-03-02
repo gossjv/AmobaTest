@@ -10,8 +10,7 @@ import Foundation
 @objcMembers
 class KeychainHelper: NSObject {
     
-    @objc
-    enum Key: Int, CustomStringConvertible {
+    @objc enum Key: Int, CustomStringConvertible {
         
         case token
         
@@ -21,7 +20,6 @@ class KeychainHelper: NSObject {
             }
         }
     }
-    
     
     @discardableResult
     func add(value: String,
