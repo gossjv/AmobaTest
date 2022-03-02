@@ -11,6 +11,7 @@ class PatientListViewController: UIViewController {
 
     @IBOutlet weak var patientListTableView: UITableView!
     
+    @IBOutlet weak var logoutUIBotton: UIButton!
     
     var doctor: Doctor!
     
@@ -20,11 +21,24 @@ class PatientListViewController: UIViewController {
         patientListTableView.register(cellNib, forCellReuseIdentifier: "PatientTableViewCell")
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        configurateElements()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let secondVC: PatientDetailViewController = segue.destination as? PatientDetailViewController,
            let patient = sender as? Patient {
             secondVC.patient = patient
         }
+    }
+
+    @IBAction func logoutButtonTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func configurateElements() {
+        logoutUIBotton.layer.cornerRadius = logoutUIBotton.bounds.width * 0.1
     }
 }
 

@@ -18,10 +18,6 @@ class APIViewModel: APIRequestable {
     typealias Service = APIService
     lazy var provider: MoyaProvider<Service> = MoyaProvider<Service>(plugins: [authPlugin])
     
-    func requestWithNoData(_ service: Service, _ callback: @escaping (Error?) -> Void) {
-        request(target: service, callback: callback)
-    }
-    
     func auth(_ service: Service, _ callback: @escaping (Result<AuthResponse, Error>) -> Void) {
         request(target: service, model: AuthResponse.self,  callback: callback)
     }
@@ -29,6 +25,8 @@ class APIViewModel: APIRequestable {
     func getAllPatients(_ service: Service, _ callback: @escaping (Result<[PatientResponse], Error>) -> Void) {
         request(target: service, model: [PatientResponse].self,  callback: callback)
     }
+    
+//    func logout(
 }
 
 

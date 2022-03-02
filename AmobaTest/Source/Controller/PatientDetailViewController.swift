@@ -8,6 +8,7 @@
 import UIKit
 import Kingfisher
 
+
 class PatientDetailViewController: UIViewController {
 
     var patient: Patient!
@@ -15,7 +16,6 @@ class PatientDetailViewController: UIViewController {
     @IBOutlet weak var imagePatient: UIImageView!
     @IBOutlet weak var namePatientLabel: UILabel!
     @IBOutlet weak var ageYearPatientLabel: UILabel!
-    @IBOutlet weak var monthYearPatientLabel: UILabel!
     @IBOutlet weak var sexPatientLabel: UILabel!
     @IBOutlet weak var adressPatientLabel: UILabel!
     @IBOutlet weak var phonePatientLabel: UILabel!
@@ -29,6 +29,7 @@ class PatientDetailViewController: UIViewController {
     @IBOutlet weak var adressLabel: UILabel!
     @IBOutlet weak var sexLabel: UILabel!
     @IBOutlet weak var historyBotton: UIButton!
+    @IBOutlet weak var historyUIButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,17 +38,27 @@ class PatientDetailViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        view.roundView(view: imagePatient)
+        configurateElements()
+
 
     }
     
+    @IBAction func closeDetailsBottonTaped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func configurateElements() {
+        view.roundView(view: imagePatient)
+        historyUIButton.layer.cornerRadius = historyUIButton.bounds.width * 0.1
+
+    }
     func setData(patient: Patient) {
         let font = CustomFont.setFontSofiaProRegular(fontSize: 14)
         
         imagePatient.kf.setImage(with: patient.image)
         namePatientLabel.text = patient.fullname
         namePatientLabel.font = font
-        sexPatientLabel.text = patient.sex
+        sexPatientLabel.text = genderLabelString(patient.sex)
         sexPatientLabel.font = font
         adressPatientLabel.text = patient.address
         adressPatientLabel.font = font
@@ -59,6 +70,9 @@ class PatientDetailViewController: UIViewController {
         emailPatientLabel.font = font
         idPatientLabel.text = patient.peopleDocument
         idPatientLabel.font = font
+        ageYearPatientLabel.text = patient.birthday.toAge
+        ageYearPatientLabel.font = font
+        
         statusPatientLabel.font = font
         ageLabel.font = font
         mobileLabel.font = font
@@ -67,7 +81,9 @@ class PatientDetailViewController: UIViewController {
         sexLabel.font = font
         
     }
-    @IBAction func closeDetailsBottonTaped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    
+    func genderLabelString(_ gender: String) -> String {
+        gender == "M" ? "Masculino" : "Femenino"
     }
+ 
 }

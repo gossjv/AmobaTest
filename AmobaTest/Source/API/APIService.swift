@@ -6,6 +6,7 @@
 //
 
 import Moya
+import UIKit
 
 struct AuthResponse: Decodable {
     var token: String
@@ -59,8 +60,7 @@ extension APIService: TargetType, AccessTokenAuthorizable {
         case let .getAllPatients(doctorId, companyId):
             let params: [String : Any] = [
                 "doctor_id" : doctorId,
-                "company_id" : companyId
-            ]
+                "company_id" : companyId]
             
             return .requestParameters(parameters: params, encoding: JSONEncoding.default)
         }
@@ -84,4 +84,5 @@ extension APIService: TargetType, AccessTokenAuthorizable {
         }
     }
 }
+
 

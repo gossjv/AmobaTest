@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EB05590E27CEA82A001A50F3 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05590D27CEA82A001A50F3 /* Patient.swift */; };
 		EB05591927CEAA2E001A50F3 /* PatientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB05591827CEAA2E001A50F3 /* PatientResponse.swift */; };
+		EB1C47C127CFA47C00FBD54A /* UITextFieldView+AMOBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C47C027CFA47C00FBD54A /* UITextFieldView+AMOBA.swift */; };
+		EB1C47E727CFD62600FBD54A /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C47E627CFD62600FBD54A /* DateFormatter.swift */; };
 		EB6D6A4527CD308D00F932C0 /* PatientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A4427CD308D00F932C0 /* PatientDetailViewController.swift */; };
 		EB6D6A4827CD723A00F932C0 /* SofiaProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB6D6A4727CD723A00F932C0 /* SofiaProRegular.ttf */; };
 		EB6D6A5E27CD96C900F932C0 /* APIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6D6A5D27CD96C900F932C0 /* APIRequestable.swift */; };
@@ -36,6 +38,8 @@
 		D806A096BCE73F41E0F0C673 /* libPods-AmobaTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AmobaTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB05590D27CEA82A001A50F3 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		EB05591827CEAA2E001A50F3 /* PatientResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientResponse.swift; sourceTree = "<group>"; };
+		EB1C47C027CFA47C00FBD54A /* UITextFieldView+AMOBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextFieldView+AMOBA.swift"; sourceTree = "<group>"; };
+		EB1C47E627CFD62600FBD54A /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		EB6D6A4427CD308D00F932C0 /* PatientDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailViewController.swift; sourceTree = "<group>"; };
 		EB6D6A4727CD723A00F932C0 /* SofiaProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SofiaProRegular.ttf; sourceTree = "<group>"; };
 		EB6D6A5D27CD96C900F932C0 /* APIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestable.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				EB6D6A7627CDB12B00F932C0 /* Extensions */,
 				EB939B2A27CC5C5A0029274F /* CustomFont.swift */,
 				EB6D6A6C27CD9D8800F932C0 /* KeychainHelper.swift */,
+				EB1C47E627CFD62600FBD54A /* DateFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6D6A7727CDB14900F932C0 /* UIView+AMOBA.swift */,
+				EB1C47C027CFA47C00FBD54A /* UITextFieldView+AMOBA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			dependencies = (
 			);
 			name = AmobaTest;
+			packageProductDependencies = (
+			);
 			productName = AmobaTest;
 			productReference = EBDCDD7827CC200D0080191C /* AmobaTest.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +301,8 @@
 				Base,
 			);
 			mainGroup = EBDCDD6F27CC200D0080191C;
+			packageReferences = (
+			);
 			productRefGroup = EBDCDD7927CC200D0080191C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -351,9 +361,11 @@
 				EB939B2B27CC5C5A0029274F /* CustomFont.swift in Sources */,
 				EB6D6A4527CD308D00F932C0 /* PatientDetailViewController.swift in Sources */,
 				EBDCDD8027CC200D0080191C /* LoginViewController.swift in Sources */,
+				EB1C47C127CFA47C00FBD54A /* UITextFieldView+AMOBA.swift in Sources */,
 				EBDCDD9D27CC37460080191C /* PatientListViewController.swift in Sources */,
 				EBDCDD7C27CC200D0080191C /* AppDelegate.swift in Sources */,
 				EBDCDDA427CC3ACC0080191C /* PatientTableViewCell.swift in Sources */,
+				EB1C47E727CFD62600FBD54A /* DateFormatter.swift in Sources */,
 				EB6D6A6A27CD9CE800F932C0 /* APIViewModel.swift in Sources */,
 				EB6D6A7827CDB14900F932C0 /* UIView+AMOBA.swift in Sources */,
 				EB6D6A6D27CD9D8800F932C0 /* KeychainHelper.swift in Sources */,
